@@ -7,7 +7,7 @@ class Program
         // This function accepts user input
         string userSize;
         string userTopings;
-    
+
         Console.Write("Hello! What kind of pizza would you like? Please enter the following:");
         Console.WriteLine("");
         Console.WriteLine("");
