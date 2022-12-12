@@ -22,24 +22,24 @@ class Program
         Console.WriteLine("");
 
 
-        double sizePrice = 0;
-        double topingPrice = 0;
+        double sizePrice = 0.00;
+        double topingPrice = 0.00;
 
         if (userSize == "Small")
         {
-            sizePrice = 1.0;
+            sizePrice = 1.00;
         }
         else if (userSize == "Medium")
         {
-            sizePrice = 1.5;
+            sizePrice = 1.50;
         }
         else if (userSize == "Large")
         {
-            sizePrice = 2.0;
+            sizePrice = 2.00;
         }
         else if (userSize == "Extra-Large")
         {
-            sizePrice = 2.5;
+            sizePrice = 2.50;
         }
         else
         {
@@ -48,15 +48,15 @@ class Program
 
         if (userTopings == "Extra-Cheese")
         {
-            topingPrice = 0.5;
+            topingPrice = 0.50;
         }
         else if (userTopings == "Pepperoni")
         {
-            topingPrice = 1.0;
+            topingPrice = 1.00;
         }
         else if (userTopings == "Pineapple")
         {
-            topingPrice = 1.5;
+            topingPrice = 1.50;
         }
         else
         {
@@ -65,7 +65,7 @@ class Program
 
         double totalPrice = sizePrice + topingPrice;
 
-        Console.WriteLine("Your total will be $" + totalPrice + "! Please call 737-1111 to order!");
+        Console.WriteLine("Your total will be " + totalPrice.ToString("C") + "! Please call 737-1111 to order!");
 
         Console.WriteLine("\nDone.");
 
